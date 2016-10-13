@@ -1,0 +1,19 @@
+#ifndef __DISPLAY_H
+#define __DISPLAY_H
+
+typedef enum{
+	ENTRY_SIDE_A = 1,
+	ENTRY_SIDE_B,
+	BI_DIRECTIONAL_ENTRY,
+	NO_ENTRY,
+	ENTRY_SIDE_A_ACTIVE,
+	ENTRY_SIDE_B_ACTIVE,
+	ENTRY_SIDE_A_FAULT,
+	ENTRY_SIDE_B_FAULT,
+	OBSTRUCTION,
+	IDLE
+}DISPLAY;
+
+void display_show(char id, char state);
+
+#endif
